@@ -57,3 +57,24 @@ print (me.getClassiness())
 me.addItem("bowtie")
 # Should be 15
 print (me.getClassiness())
+
+# Write a function called "show_excitement" where the string
+# "I am super excited for this course!" is returned exactly
+# 5 times, where each sentence is separated by a single space.
+# Return the string with "return".
+# You can only have the string once in your code.
+# Don't just copy/paste it 5 times into a single variable!
+
+class robot:
+    def __init__(self,name):
+        self.name=name
+    def introduce(self):
+        print(self.name)
+class person:
+    def __init__(self,robot):
+        self.robot=robot
+r1=robot("Grześ")
+p1=person(r1)
+r1.introduce()
+p1.robot.introduce()
+
